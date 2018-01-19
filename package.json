@@ -5,16 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "xo && ava --verbose",
-    "example": "DEBUG=koa-filter node example/index.js"
+    "example": "DEBUG=koa-filter node example/index.js",
+    "publish-patch": "npm version patch && git push && git push --tags && npm publish",
+    "publish-minor": "npm version minor && git push && git push --tags && npm publish",
+    "publish-major": "npm version major && git push && git push --tags && npm publish"
   },
-  "keywords": [
-    "middleware",
-    "koa",
-    "request",
-    "filter",
-    "cookie",
-    "ip"
-  ],
+  "keywords": ["middleware", "koa", "request", "filter", "cookie", "ip"],
   "author": "shawnnxiao",
   "license": "MIT",
   "devDependencies": {
@@ -35,9 +31,7 @@
     "semicolon": false,
     "space": 2,
     "rules": {
-      "operator-linebreak": [
-        0
-      ],
+      "operator-linebreak": [0],
       "no-await-in-loop": 0
     }
   },
