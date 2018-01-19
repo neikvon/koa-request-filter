@@ -1,6 +1,6 @@
 {
   "name": "koa-request-filter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "request filter middleware for koa 2+",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,14 @@
     "publish-minor": "npm version minor && git push && git push --tags && npm publish",
     "publish-major": "npm version major && git push && git push --tags && npm publish"
   },
-  "keywords": ["middleware", "koa", "request", "filter", "cookie", "ip"],
+  "keywords": [
+    "middleware",
+    "koa",
+    "request",
+    "filter",
+    "cookie",
+    "ip"
+  ],
   "author": "shawnnxiao",
   "license": "MIT",
   "devDependencies": {
@@ -31,7 +38,9 @@
     "semicolon": false,
     "space": 2,
     "rules": {
-      "operator-linebreak": [0],
+      "operator-linebreak": [
+        0
+      ],
       "no-await-in-loop": 0
     }
   },
